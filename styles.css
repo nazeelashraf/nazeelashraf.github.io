@@ -6,7 +6,7 @@
     --accent-color: #2ecc71;
     --splash-primary: #1abc9c;
     --splash-secondary: #2ecc71;
-    --gradient-theme: linear-gradient(60deg, var(--splash-primary), var(--splash-secondary))
+    --gradient-theme: linear-gradient(60deg, var(--splash-primary), var(--splash-secondary));
   }
   
   html {
