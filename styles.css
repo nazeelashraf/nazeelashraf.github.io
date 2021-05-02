@@ -1,0 +1,230 @@
+:root {
+    --main-color: #2c3e50;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --default-font: Poppins, Helvetica;
+    --accent-color: #2ecc71;
+    --splash-primary: #1abc9c;
+    --splash-secondary: #2ecc71;
+    --gradient-theme: linear-gradient(60deg, var(--splash-primary), var(--splash-secondary))
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--default-font);
+    color: var(--dark-color);
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--main-color);
+    box-shadow: 1px 1px 5px var(--dark-color);
+    z-index: 1;
+  }
+  
+  .gradient-theme {
+    background: var(--gradient-theme);
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex-end {
+    justify-content: flex-end;
+  }
+  
+  .flex-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-list a {
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    color: var(--light-color);
+    max-height: var(--header-max-height);
+  }
+  
+  .nav-list a:hover {
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+  }
+  
+  .flex-center {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .viewport-height{
+    min-height: 100vh;
+  }
+  
+  #welcome-section {
+    padding: 0 10px;
+  }
+  
+  .splash-text {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin: 0px;
+  }
+  
+  .description {
+    font-size: 1.75rem;
+  }
+  
+  #projects {
+    color: var(--light-color);
+    background-color: var(--dark-color);
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 2.25rem;
+    margin: 0px;
+    padding-bottom: 10px;
+  }
+  
+  .border-bottom-dashed {
+    border-bottom: dashed 4px white;
+  }
+  
+  .projects-text {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .projects-container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 40px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+  }
+  
+  .project-tile {
+    background: var(--gradient-theme);
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px grey;
+    text-align: center;
+    padding-bottom: 0.625rem;
+    animation-name: slide-down;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  
+  a.project-tile {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-size: 1.375rem;
+    overflow: hidden;
+  }
+  
+  .card-image {
+    height: calc(100% - 40px);
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .project-tile:hover {
+    animation-name: slide-up;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  
+  .project-tile.padding {
+    padding: 10px;
+  }
+  
+  .contact {
+    text-align: center;
+    padding: 0 10px;
+  }
+  
+  .links-container {
+    margin: 20px 0px;
+  }
+  
+  .links {
+    justify-content: space-around;
+  }
+  
+  .fancy-link a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-size: 1.25rem;
+  }
+  
+  .fancy-link {
+    animation-name: slide-up;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  
+  .fancy-link:hover {
+    animation-name: slide-down;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  
+  .fancy-link-light {
+    text-decoration: none;
+    color: var(--light-color);
+    font-size: 1.25rem;
+  }
+  
+  footer {
+    background: var(--dark-color);
+    color: var(--light-color);
+    padding: 10px;
+  }
+  
+  @keyframes slide-up {
+    0%{
+      transform: translate(0, 0px);
+    }
+    100%{
+      transform: translate(0, -4px);
+    }
+  }
+  
+  @keyframes slide-down {
+    0%{
+      transform: translate(0, -4px);
+    }
+    100%{
+      transform: translate(0, 0px);
+    }
+  }
+  
+  @media (max-width: 640px) {
+    html {
+      font-size: 20px;
+    }
+    
+    .project-tile {
+      padding-bottom: 1rem;
+    }
+  }
