@@ -200,6 +200,12 @@
     color: var(--light-color);
     padding: 10px;
   }
+
+  .linkedin-iframe {
+    width: 250px;
+    height: 282px;
+    margin-top: 20px;
+  }
   
   @keyframes slide-up {
     0%{
