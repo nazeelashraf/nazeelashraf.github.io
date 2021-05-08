@@ -11,6 +11,7 @@
   
   html {
     scroll-behavior: smooth;
+    font-size: 20px;
   }
   
   body {
@@ -32,6 +33,10 @@
   
   .gradient-theme {
     background: var(--gradient-theme);
+  }
+
+  .flex-columns {
+    flex-flow: column;
   }
   
   .flex {
@@ -129,7 +134,7 @@
     border-radius: 10px;
     box-shadow: 1px 1px 3px grey;
     text-align: center;
-    padding-bottom: 0.625rem;
+    padding-bottom: 1rem;
     animation-name: slide-down;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
@@ -169,6 +174,7 @@
   
   .links {
     justify-content: space-around;
+    flex-wrap: wrap;
   }
   
   .fancy-link a {
@@ -201,10 +207,9 @@
     padding: 10px;
   }
 
-  .linkedin-iframe {
-    width: 250px;
-    height: 282px;
-    margin-top: 20px;
+  .socials-card {
+    width: 250px !important;
+    height: 282px !important;
   }
   
   @keyframes slide-up {
@@ -225,12 +230,16 @@
     }
   }
   
-  @media (max-width: 640px) {
+  @media (min-width: 520px) {
     html {
-      font-size: 20px;
+      font-size: medium;
     }
     
     .project-tile {
-      padding-bottom: 1rem;
+      padding-bottom: 0.625rem;
+    }
+
+    .scale-to-card {
+      transform: scale(0.88, 0.88) translate(0px, -22px);
     }
   }

@@ -13,9 +13,9 @@
     <!-- External CSS -->
     <link href="styles.css" rel="stylesheet">
 
-    <!-- LinkedIn -->
-
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
@@ -87,34 +87,50 @@
                 <div class="links-container">
                     <ul class="flex flex-list links">
                         <li class="fancy-link">
-                            <a id="profile-link" href="https://github.com/nazeelashraf" target="_blank">
-                                <i class="icon-github"></i> GitHub
-                            </a>
-                        </li>
-                        <li class="fancy-link">
                             <a href="mailto:nazeelash@gmail.com" target="_blank">
                                 <i class="icon-envelope"></i> Email
                             </a>
                         </li>
                     </ul>
-
-                    <iframe src="linkedin.html" class="linkedin-iframe" frameborder="0" scrolling="no">
-                        <ul class="flex flex-list links">
-                            <a href="https://www.linkedin.com/in/nazeel-ashraf-a59413172/" target="_blank">
-                                <i class="icon-envelope"></i> LinkedIn
+                    <ul class="flex flex-list links">
+                        <li class="fancy-link">
+                            <a id="linkedin-profile-link" href="https://www.linkedin.com/in/nazeel-ashraf-a59413172/" target="_blank">
+                                <i class="icon-linkedin-sign"></i> LinkedIn
                             </a>
-                        </ul>
-                    </iframe>
+                            <div>
+                                <iframe src="linkedin.html" class="socials-card" frameborder="0" scrolling="no">
+                                    <ul class="flex flex-list links">
+                                        <a href="https://www.linkedin.com/in/nazeel-ashraf-a59413172/" target="_blank">
+                                            <i class="icon-envelope"></i> LinkedIn
+                                        </a>
+                                    </ul>
+                                </iframe>
+                            </div>
+                        </li>
 
-              
+                        <li class="fancy-link">
+                            <a id="profile-link" href="https://github.com/nazeelashraf" target="_blank">
+                                <i class="icon-github"></i> GitHub
+                            </a>
+                            <div class="scale-to-card" >
+                                <div class="github-card" data-github="nazeelashraf" data-width="250" data-height="282" data-theme="medium" target="blank"></div>
+                                <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+                            </div>
+                        </li>
+                    </ul>
+
+                    
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="flex flex-center">
+    <footer class="flex flex-center flex-columns">
         <div>
             Inspired by <a href="https://www.freecodecamp.org" class="fancy-link fancy-link-light">freeCodeCamp.org</a>
+        </div>
+        <div>
+            <a href="https://www.freeiconspng.com/img/21884" class="fancy-link fancy-link-light">Letter N Png Vector</a>
         </div>
     </footer>
 </body>
